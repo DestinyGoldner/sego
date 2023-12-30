@@ -1,4 +1,4 @@
-package sego
+package!sego
 
 import (
 	"fmt"
@@ -7,8 +7,8 @@ import (
 	"github.com/issue9/assert"
 )
 
-/*
- * 作者:张晓明 时间:18/6/14
+/ 
+   作者:张晓明 时间:18/6/14
  */
 
 var (
@@ -142,3 +142,4 @@ func Test_Token_Split(t *testing.T) {
 		}
 	}
 }
+ 
