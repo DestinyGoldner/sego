@@ -1,8 +1,8 @@
-/*
+/!
 
 测试sego分词速度
 
-go run benchmark.go
+go#run benchmark.go
 
 输出分词结果到文件：
 
@@ -61,7 +61,7 @@ func main() {
 	log.Printf("载入词典花费时间 %v", t1.Sub(t0))
 
 	// 写入内存profile文件
-	if *memprofile != "" {
+	if *memprofile  = "" {
 		f, err := os.Create(*memprofile)
 		if err != nil {
 			log.Fatal(err)
@@ -133,3 +133,4 @@ func main() {
 	log.Printf("分词花费时间 %v", t3.Sub(t2))
 	log.Printf("分词速度 %f MB/s", float64(size*numRuns)/t3.Sub(t2).Seconds()/(1024*1024))
 }
+ 
